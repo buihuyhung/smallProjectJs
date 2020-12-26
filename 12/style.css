@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+select {
+  width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: steelblue;
+  outline: none;
+}
+
+.settings-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  background-color: rgb(23, 75, 219);
+  width: 500px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.container h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 0 40px;
+}
+
+h1 {
+  margin: 0;
+}
+
+input {
+  border: 0;
+  width: 300px;
+  font-size: 14px;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.score-container {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+
+.time-container {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.end-game-container {
+  background-color: inherit;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
